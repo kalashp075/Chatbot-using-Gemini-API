@@ -1,0 +1,120 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Centering the main content */
+.container {
+    display: grid;
+    place-items: center; /* Both horizontal and vertical centering */
+    height: 100vh;
+}
+
+.content {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px; /* You can control the maximum width */
+}
+
+.content h2 {
+    text-align: center;
+}
+
+/* Message box styling */
+.message-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the content */
+    padding: 10px;
+}
+
+.message-box-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Control how wide the message box appears */
+    max-width: 850px; /* Max width of the input and button combined */
+    margin-bottom: 10px;
+}
+
+.message-box textarea {
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    resize: none; /* Prevents user from manually resizing */
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgb(244, 244, 244);
+}
+
+.message-box textarea:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(207, 212, 217);
+} 
+
+attach_button, .send_button {
+    flex-shrink: 0; /* Prevent the buttons from shrinking */
+    margin: 0 5px;
+}
+
+#message-input {
+    flex-grow: 1; /* Allow the textarea to grow while keeping buttons fixed */
+    resize: none; /* Disable manual resizing */
+    overflow-y: hidden; /* Hide scrollbar until necessary */
+    min-height: 36px; /* Set an initial minimum height */
+    max-height: 300px; /* Set a maximum height for the textarea */
+    margin-bottom: -1px;
+}
+
+/* Responsive padding inside the content box */
+@media (max-width: 576px) {
+    .message-box {
+        padding: 10px 5px;
+    }
+    .message-box-inner {
+        width: 95%; /* Make it wider on smaller screens */
+    }
+}
+
+.send_button{
+    padding: 10px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.send_button:hover{
+    background-color: rgb(53, 52, 52);
+}
+
+.attach_button{
+    width: 45px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 60px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.attach_button:hover{
+    background-color: rgb(218, 215, 215);
+}
+
+.bottom-button:hover, focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.button{
+    border-radius: 20px;
+    padding: 3px 13px 3px 13px;
+    font-size: smaller;
+}
+

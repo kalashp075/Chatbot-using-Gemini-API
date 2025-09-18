@@ -1,0 +1,155 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    display: grid;
+    place-items: center;     /* Both horizontal and vertical centering */
+    height: 100vh; 
+}
+
+.content{
+    padding: 10px;
+    width: 320px;
+}
+
+.floating-label {
+    position: relative;
+    margin: 20px 0;
+}
+
+.floating-label input {
+    width: 100%;
+    padding: 11px 11px 11px 12px;
+    font-size: 16px;
+    border: 1px solid rgb(186, 191, 198);
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.floating-label label {
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    color: #888888;
+    font-size: 14px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+    padding-left: 12px;;
+}
+
+.floating-label input:focus ~ label,
+.floating-label input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: rgb(58, 179, 134);
+    background-color: #fff;
+    padding: 0 4px;
+}
+
+.floating-label input:focus {
+    border-color: rgb(58, 179, 134);
+    outline: none;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#submit{
+    width: 100%;
+    font-size: 15px;
+    padding: 11px 11px 11px 0px;  
+    color: white;
+    background-color: rgb(58, 179, 134);
+    border: none;
+    border-radius: 6px;
+    font-weight: 300;
+    transition: background-color 0.5s ease;
+}
+
+#submit:hover{
+    background-color: rgb(67, 156, 123);
+}
+
+.account{
+    display: inline;
+}
+
+.signup_footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.signup_footer a{
+    text-decoration: none;
+    color: rgb(58, 179, 134);
+}
+
+.signup_footer a:hover{
+    color: rgb(67, 156, 123);
+}
+
+/* Sign Up Page 2 */
+.go_back{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.go_back a{
+    text-decoration: none;
+    color: rgb(67, 156, 123);
+    font-weight: bold;
+}
+
+.go_back a:hover{
+    color: rgb(67, 156, 123);
+}
+/* Sign Up Page 2 */
+
+
+/* Sign Up Page 3 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+/* Sign Up Page 3 */
+
+
+/* Verification Page */
+.verification_text{
+    text-align: center;
+}
+
+.resend{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.resend a{
+    text-decoration: none;
+    color: rgb(67, 156, 123);
+    font-weight: bold;
+}
+
+.resend a:hover{
+    color: rgb(67, 156, 123);
+}
+
+#verification_email{
+    font-weight: bolder;
+}
+/* Verification Page */

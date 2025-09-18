@@ -1,0 +1,15 @@
+db.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+migrations/__pycache__/
+myapp/static/icons/
+env/
+*.env
+*.sqlite3
+*.log
+
+project/settings.py
+myapp/migrations/
